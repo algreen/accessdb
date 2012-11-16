@@ -1,0 +1,18 @@
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAMOTests\bin\Debug\OpenAMOTests.dll.config
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAMOTests\bin\Debug\OpenAMOTests.XML
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAMOTests\bin\Debug\OpenAMOTests.dll
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAMOTests\bin\Debug\OpenAMOTests.pdb
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAMOTests\bin\Debug\FSharp.Core.dll
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAMOTests\bin\Debug\FSharp.Core.xml
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAMOTests\obj\Debug\OpenAMOTests.dll
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAMOTests\obj\Debug\OpenAMOTests.pdb
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAMOTests\obj\Debug\OpenAMOTests.fsprojResolveAssemblyReference.cache
+D:\GitHub\Playing\OpenAccessDb\OpenAMOTests\bin\Debug\OpenAMOTests.XML
+D:\GitHub\Playing\OpenAccessDb\OpenAMOTests\obj\Debug\OpenAMOTests.fsprojResolveAssemblyReference.cache
+D:\GitHub\Playing\OpenAccessDb\OpenAMOTests\obj\Debug\OpenAMOTests.dll
+D:\GitHub\Playing\OpenAccessDb\OpenAMOTests\obj\Debug\OpenAMOTests.pdb
+D:\GitHub\Playing\OpenAccessDb\OpenAMOTests\bin\Debug\OpenAMOTests.dll.config
+D:\GitHub\Playing\OpenAccessDb\OpenAMOTests\bin\Debug\OpenAMOTests.dll
+D:\GitHub\Playing\OpenAccessDb\OpenAMOTests\bin\Debug\OpenAMOTests.pdb
+D:\GitHub\Playing\OpenAccessDb\OpenAMOTests\bin\Debug\FSharp.Core.dll
+D:\GitHub\Playing\OpenAccessDb\OpenAMOTests\bin\Debug\FSharp.Core.xml

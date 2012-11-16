@@ -1,0 +1,17 @@
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.exe.config
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.XML
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.exe
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.pdb
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAccessDb\bin\Debug\FSharp.Core.dll
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAccessDb\bin\Debug\FSharp.Core.xml
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAccessDb\obj\Debug\OpenAccessDb.exe
+c:\users\agreen.development\documents\visual studio 2012\Projects\OpenAccessDb\OpenAccessDb\obj\Debug\OpenAccessDb.pdb
+D:\GitHub\Playing\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.XML
+D:\GitHub\Playing\OpenAccessDb\OpenAccessDb\obj\Debug\OpenAccessDb.fsprojResolveAssemblyReference.cache
+D:\GitHub\Playing\OpenAccessDb\OpenAccessDb\obj\Debug\OpenAccessDb.exe
+D:\GitHub\Playing\OpenAccessDb\OpenAccessDb\obj\Debug\OpenAccessDb.pdb
+D:\GitHub\Playing\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.exe.config
+D:\GitHub\Playing\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.exe
+D:\GitHub\Playing\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.pdb
+D:\GitHub\Playing\OpenAccessDb\OpenAccessDb\bin\Debug\FSharp.Core.dll
+D:\GitHub\Playing\OpenAccessDb\OpenAccessDb\bin\Debug\FSharp.Core.xml
