@@ -24,3 +24,15 @@ D:\GitHub\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.exe
 D:\GitHub\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.pdb
 D:\GitHub\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\FSharp.Core.dll
 D:\GitHub\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\FSharp.Core.xml
+C:\GitProjects\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.exe.config
+C:\GitProjects\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.XML
+C:\GitProjects\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.exe
+C:\GitProjects\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\OpenAccessDb.pdb
+C:\GitProjects\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\FSharp.Core.dll
+C:\GitProjects\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\FSharp.Data.TypeProviders.dll
+C:\GitProjects\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\System.Data.dll
+C:\GitProjects\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\System.Data.Linq.dll
+C:\GitProjects\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\System.ServiceModel.dll
+C:\GitProjects\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\FSharp.Core.xml
+C:\GitProjects\accessdb\OpenAccessDb\OpenAccessDb\obj\Debug\OpenAccessDb.exe
+C:\GitProjects\accessdb\OpenAccessDb\OpenAccessDb\obj\Debug\OpenAccessDb.pdb
