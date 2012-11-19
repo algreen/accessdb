@@ -1,7 +1,9 @@
 ﻿//Puts padding into the output
+module ReadWriteTextFile
 
-open System.IO
+
 open System
+open System.IO
 
 let CreateNewFile = 
     let obtainWords (line : string) =
