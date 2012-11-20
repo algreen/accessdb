@@ -61,6 +61,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
@@ -71,8 +72,8 @@
     <Compile Include="ConfigurationSetup.fs" />
     <None Include="ConsumeWebService.fsx" />
     <None Include="AmoTest.fsx" />
-    <Compile Include="WebPageContentGrabber.fs" />
     <Compile Include="MessagingTest.fs" />
+    <Compile Include="WebPageContentGrabber.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

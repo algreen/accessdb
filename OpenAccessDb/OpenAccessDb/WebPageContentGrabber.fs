@@ -6,6 +6,7 @@ module WebPageContentGrabber
     open System.Net
     open System
     open System.IO
+    open System.ServiceModel
 
     // Open the contents of the Web Page
     let fetchUrl callback url = 
@@ -35,17 +36,43 @@ module WebPageContentGrabber
     let sites   =   ["http://onthewight.com";
                     "http://iwight.com"]
 
+
     let content = sites |>  List.map fetchUrl1
     
     //lets write output to a text file
-    File.WriteAllLines(@"D:\AlsOutputFile.txt", content)
+    File.WriteAllLines(@"C:\AlsOutputFile.txt", content)
 
     // lets try to find specific words in this file
-    let ParseFile = File.ReadAllLines("D:\\AlsOutputFile.txt")
+    let ParseFile = File.ReadAllLines("C:\\AlsOutputFile.txt")
 
     let ParseFileForSpecificWords = 
         ParseFile
-        |> Seq.filter(fun x -> if x.Contains("broadband") then false else true)
+        |> Seq.filter(fun x -> if x.Contains("wight") then false else true)
 
     let FileSummary = "Length of file : " + ParseFile.Length.ToString() + " - Number of Occurrances : " + (ParseFileForSpecificWords |> (Seq.length)).ToString()
 
+
+    let feeds =
+        [ ("Through the Interface",
+            "http://blogs.autodesk.com/through-the-interface",
+            "http://through-the-interface.typepad.com/through_the_interface/rss.xml");
+
+            ("Don Syme's F# blog",
+                "http://blogs.msdn.com/dsyme/",
+                "http://blogs.msdn.com/dsyme/rss.xml");
+                ]
+
+    // Consume an rss feed
+ 
+ // http://through-the-interface.typepad.com/through_the_interface/2008/01/turning-autocad.html
+
+        // Fetch the contents of a web page, synchronously
+    let httpSync (url:string) =
+        let req = WebRequest.Create(url)
+        use resp = req.GetResponse()
+        use stream = resp.GetResponseStream()
+        use reader = new StreamReader(stream)
+        reader.ReadToEnd()
+
+
+ //       httpSync feeds
