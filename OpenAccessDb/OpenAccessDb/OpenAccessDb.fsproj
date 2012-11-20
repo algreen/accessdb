@@ -65,13 +65,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="SetupSettings.fsx" />
     <Compile Include="ReadWriteTextFile.fs" />
     <None Include="ProcessErrors.fsx" />
     <None Include="OpenAMO.fsx" />
     <Compile Include="OpenDatabase.fs" />
-    <None Include="AmoTest.fsx" />
+    <Compile Include="ConfigurationSetup.fs" />
     <None Include="ConsumeWebService.fsx" />
+    <None Include="AmoTest.fsx" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

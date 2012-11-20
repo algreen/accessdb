@@ -25,3 +25,11 @@ C:\GitProjects\accessdb\OpenAccessDb\OpenAMOTests\bin\Debug\FSharp.Core.xml
 C:\GitProjects\accessdb\OpenAccessDb\OpenAMOTests\obj\Debug\OpenAMOTests.fsprojResolveAssemblyReference.cache
 C:\GitProjects\accessdb\OpenAccessDb\OpenAMOTests\obj\Debug\OpenAMOTests.dll
 C:\GitProjects\accessdb\OpenAccessDb\OpenAMOTests\obj\Debug\OpenAMOTests.pdb
+D:\GitHub\accessdb\OpenAccessDb\OpenAMOTests\bin\Debug\OpenAMOTests.dll.config
+D:\GitHub\accessdb\OpenAccessDb\OpenAMOTests\bin\Debug\OpenAMOTests.XML
+D:\GitHub\accessdb\OpenAccessDb\OpenAMOTests\bin\Debug\OpenAMOTests.dll
+D:\GitHub\accessdb\OpenAccessDb\OpenAMOTests\bin\Debug\OpenAMOTests.pdb
+D:\GitHub\accessdb\OpenAccessDb\OpenAMOTests\bin\Debug\FSharp.Core.dll
+D:\GitHub\accessdb\OpenAccessDb\OpenAMOTests\bin\Debug\FSharp.Core.xml
+D:\GitHub\accessdb\OpenAccessDb\OpenAMOTests\obj\Debug\OpenAMOTests.dll
+D:\GitHub\accessdb\OpenAccessDb\OpenAMOTests\obj\Debug\OpenAMOTests.pdb

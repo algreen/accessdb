@@ -1,16 +1,24 @@
 ﻿// Crib sheet http://msdn.microsoft.com/en-us/library/hh361033.aspx
 
-#I "C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\3.0\Runtime\v4.0\Type Providers\FSharp.Data.TypeProviders.dll"
+System.IO.Directory.SetCurrentDirectory (__SOURCE_DIRECTORY__)
+
+#I @"C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\3.0\Runtime\v4.0\Type Providers\FSharp.Data.TypeProviders.dll"
 #r "FSharp.Data.TypeProviders"
 open Microsoft.FSharp.Data.TypeProviders
 
 // to get the interactive window to run with the DLL i want
-#I "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.Linq.dll"
-#r "System.Data.Linq" ;;
-open System.Data.Linq;;
+#I @"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\"
+#r "System.Data.Linq"
+open System.Data.Linq
 
+#load "CongfigurationSetup.fs"
+open ConfigurationSetup
 
-type amoSchema = SqlDataConnection<"Data Source=DEV02A\DEV2005;Initial Catalog=amo;Integrated Security=SSPI;">
+let config = ConfigurationSetup.GetConfiguration
+
+let databaseLocation = config.AmoDatabaseLocation
+
+type amoSchema = SqlDataConnection<databaseLocation>
 let db = amoSchema.GetDataContext()
 
 db.DataContext.Log <- System.Console.Out

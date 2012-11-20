@@ -13,8 +13,9 @@ open Microsoft.FSharp.Data.TypeProviders
 //type twitter = "http://twitter.com/statuses/user_timeline.xml?id=joelcomm"
 
 type TerraService = WsdlService<"http://msrmaps.com/TerraService2.asmx?WSDL">
+
 try
-    let terraClient = TerraService.GetTerraServiceSoap ()
+    let terraClient = TerraService.GetTerraServiceSoap()
     let myPlace = new TerraService.ServiceTypes.msrmaps.com.Place(City = "Redmond", State = "Washington", Country = "United States")
     let myLocation = terraClient.ConvertPlaceToLonLatPt(myPlace)
     printfn "Redmond Latitude: %f Longitude: %f" (myLocation.Lat) (myLocation.Lon)
