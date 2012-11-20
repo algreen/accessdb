@@ -2,5 +2,38 @@
 <doc>
 <assembly><name>OpenAMOTests</name></assembly>
 <members>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:TestConfigurationSetup">
+
+</member>
 </members>
 </doc>

@@ -1,4 +1,13 @@
 ﻿// Crib sheet http://msdn.microsoft.com/en-us/library/hh361033.aspx
+// We will do the following in the script
+// 1) Find customers
+// 2) Find Customer Orders
+// 3) Replicate logic from the Complete Button in AMO
+// 3.i) Call CalcLettersDue
+// 3 ii) Call CalcTotalSpend
+// 3 iii) Call Loyalty
+// 3 iiii) Call Complimentary
+
 
 System.IO.Directory.SetCurrentDirectory (__SOURCE_DIRECTORY__)
 
@@ -11,14 +20,16 @@ open Microsoft.FSharp.Data.TypeProviders
 #r "System.Data.Linq"
 open System.Data.Linq
 
-#load "CongfigurationSetup.fs"
+// Cannot get the Configuration working
+#load "ConfigurationSetup.fs"
 open ConfigurationSetup
 
 let config = ConfigurationSetup.GetConfiguration
-
 let databaseLocation = config.AmoDatabaseLocation
 
-type amoSchema = SqlDataConnection<databaseLocation>
+//type sqlSchema = SqlDataConnection<config.AmoDatabaseLocation>
+
+type amoSchema = SqlDataConnection<"Data Source=DEV02a\DEV2005;Initial Catalog=amo;Integrated Security=SSPI", StoredProcedures=true>
 let db = amoSchema.GetDataContext()
 
 db.DataContext.Log <- System.Console.Out
@@ -50,21 +61,48 @@ let findCustomer customerId =
 
 findCustomer 100 |> Seq.iter (fun row -> printfn "Found row: %d %s" row.CustomerID row.LastName)
 
-// calling Stored Procs, have to pass in StoredProcs = true
 
-type storedProcSchema = SqlDataConnection<"Data Source=DEV02a\DEV2005; Initial Catalog=amo;Integrated Security=SSPI", StoredProcedures=true>
-
-let testdb = storedProcSchema.GetDataContext()
-
-// nullable parameters to be passed across as nullable
 let nullable value = new System.Nullable<_>(value)
-//
-//let calcTotalSpendStoredProc customerId =
-//    let spendResults = testdb.Pr_AMO_CalcTotalSpend(nullable customerId)
-//  //  for result in spendResults do
-//        printfn "%d" (spendResults.ToString()) // should be something like (results.Data.GetValueorDefault()
-//  
-//        spendResults.Return
+
+
+
+// Calculate Total Spend Stored Proc
+let calcTotalSpendStoredProc customerId =
+    let spendResults = db.Pr_AMO_CalcTotalSpend(nullable customerId)
+  //  for result in spendResults do
+    printfn "Calc Total Spend %s" (spendResults.ToString())
+
+// Calculate Letters Due
+let calcLettersDue customerId orderId = 
+    let letterResults = db.Pr_AMO_CalcLettersDue(nullable orderId, nullable customerId, "", "", nullable 1)
+    printfn "Calculate Letters Due"
+
+// Calculate Loyalty Due's
+let calculateLoyaltysDue customerId =
+    //let loyaltys = db.Pr_AMO_Loyalty_new 
+    printfn "Calculate Loyalty's Due"
+
+// Calculate which Complimentary Gifts are due....
+let calculateComplimentaryGifts customerId orderId =
+    let complimentary = db.pr_TS_TargetSampling(nullable customerId, nullable 1, nullable 100,  nullable orderId, "LEBM")
+    printfn "Calculate Complimentary Gifts"
+
+
+// run the combined efforts 
+let runOrderAdditions customerId orderId =
+     calcTotalSpendStoredProc customerId
+     calcLettersDue customerId orderId
+     calculateLoyaltysDue customerId
+     calculateComplimentaryGifts customerId orderId
+     printfn "Completed Successfully"
+
+runOrderAdditions 150 10
+
+
+
+
+
+
 
 // Inserting or updating the database
 

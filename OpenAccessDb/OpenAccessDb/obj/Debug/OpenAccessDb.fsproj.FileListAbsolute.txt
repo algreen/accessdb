@@ -40,3 +40,4 @@ D:\GitHub\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\System.ServiceModel.dll
 D:\GitHub\accessdb\OpenAccessDb\OpenAccessDb\bin\Debug\FSharp.Core.xml
 D:\GitHub\accessdb\OpenAccessDb\OpenAccessDb\obj\Debug\OpenAccessDb.exe
 D:\GitHub\accessdb\OpenAccessDb\OpenAccessDb\obj\Debug\OpenAccessDb.pdb
+D:\GitHub\accessdb\OpenAccessDb\OpenAccessDb\obj\Debug\OpenAccessDb.fsprojResolveAssemblyReference.cache

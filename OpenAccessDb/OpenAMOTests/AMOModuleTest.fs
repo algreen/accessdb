@@ -1,12 +1,18 @@
 ﻿namespace OpenAMOTests
 
-
     open System
     open System.IO
+    open NUnit.Framework
 
-//    [<TestFixture>]
-//    type ''Should be able to open the Access database: ''() = 
-//       
-//       let database = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Amo.accdb;"
+//    #load "TestConfigurationSetup.fs"
 //
-
+//    [<TestFixture>]
+//    [<Category("AcceptanceTest")>]
+//    type ``When the configuration is checked ``() =
+//                
+//        [<Test>] 
+//        member __.``We should have a database connection``() =
+//            
+//            let config = TestConfiguration.GetConfig
+//                
+//            Assert.IsNotNullOrEmpty(config.AmoDatabaseName)

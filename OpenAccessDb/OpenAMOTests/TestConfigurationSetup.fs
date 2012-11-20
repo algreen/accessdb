@@ -1,4 +1,4 @@
-﻿module ConfigurationSetup
+﻿module TestConfigurationSetup
 
     open System
     open System.Configuration
@@ -10,7 +10,7 @@
 
     let defaultConfiguration = {
         CustomerWebServiceUrl   =   "http://localhost"
-        AmoDatabaseLocation     =   "Data Source=localhost;Initial Catalog=amo;Integrated Security=SSPI"
+        AmoDatabaseLocation     =   "Data Source=localhost; Initial Catalog=amo;Integrated Security=SSPI"
     }
 
     let getKey key = 

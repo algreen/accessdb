@@ -35,13 +35,46 @@
 <member name="T:ConfigurationSetup">
 
 </member>
-<member name="T:OpenDatabase">
+<member name="">
+
+</member>
+<member name="T:ReadWriteTextFile">
 
 </member>
 <member name="">
 
 </member>
-<member name="T:ReadWriteTextFile">
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:WebPageContentGrabber">
 
 </member>
 </members>
