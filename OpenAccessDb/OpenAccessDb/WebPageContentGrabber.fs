@@ -52,27 +52,6 @@ module WebPageContentGrabber
     let FileSummary = "Length of file : " + ParseFile.Length.ToString() + " - Number of Occurrances : " + (ParseFileForSpecificWords |> (Seq.length)).ToString()
 
 
-    let feeds =
-        [ ("Through the Interface",
-            "http://blogs.autodesk.com/through-the-interface",
-            "http://through-the-interface.typepad.com/through_the_interface/rss.xml");
-
-            ("Don Syme's F# blog",
-                "http://blogs.msdn.com/dsyme/",
-                "http://blogs.msdn.com/dsyme/rss.xml");
-                ]
-
-    // Consume an rss feed
- 
- // http://through-the-interface.typepad.com/through_the_interface/2008/01/turning-autocad.html
-
-        // Fetch the contents of a web page, synchronously
-    let httpSync (url:string) =
-        let req = WebRequest.Create(url)
-        use resp = req.GetResponse()
-        use stream = resp.GetResponseStream()
-        use reader = new StreamReader(stream)
-        reader.ReadToEnd()
 
 
- //       httpSync feeds
+
