@@ -68,9 +68,9 @@ let nullable value = new System.Nullable<_>(value)
 
 // Calculate Total Spend Stored Proc
 let calcTotalSpendStoredProc customerId =
-    let spendResults = db.Pr_AMO_CalcTotalSpend(nullable customerId)
-  //  for result in spendResults do
-    printfn "Calc Total Spend %s" (spendResults.ToString())
+   let spendResults = db.Pr_AMO_CalcTotalSpend(nullable customerId)
+//  for result in spendResults do
+   printfn "Calc Total Spend %s" (spendResults.ToString())
 
 // Calculate Letters Due
 let calcLettersDue customerId orderId = 

@@ -29,7 +29,7 @@ let AddContactNoteForOtherCustomer = "You have recommended the other customer wh
 //// Newsletter like additions
 //// Product Guide etc additions, additional additions if there is a delivery address etc
 //// Got this product, have this one added
-//// Real time counters
+//// Real time counters of products, change product when amount hit...
 
 
 
@@ -41,9 +41,14 @@ let AllocateComplimentaryGift = "True"
 
 // Increment Total Spend
 
-
+let AddOrderTotalToCustomersTotalSpend = 300M + 87.50M
 
 // Loyalty
+let IsLoyaltyRequired = "Yes"
+let AllocateLoyaltyProduct = "F12345"
+let IncrementLoyaltyTarget = 1000M
+
+
 
 
 
