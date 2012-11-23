@@ -11,13 +11,39 @@
 let Customer = 5
 let Order = 12345
 let NumberOfOrders = 1 // get this from db
-let IsDueLetterOnOrder = "No" // Check to see whether they are a Do Not Mail as well
+let IsCustomerDueALetterOnOrder = "Yes" // Check to see whether they are a Do Not Mail as well
 let HaveWeAlreadyAllocatedAnotherLetterOntoThisOrder = "No" // So that we do not add say a RED Letter and a STP letter
+let IsLetterWeGoingToAllocateAlreadyOnOrder = "No"
 let AllocateLetter = "Dear Bob... here is your letter"
 let AddContactNote = "Here is the contact note"
 let HaveTheyBeenRecommendedByFriend = "Yes"
 let AddContactNoteToCustomer5 = "Rec Gift Send to"
 let CouldCreateOrderForOtherCustomerAtThisPoint = "Yes"
 let AddContactNoteForOtherCustomer = "You have recommended the other customer who has now gone onto purchase"
+
+
+// Other functions within AMO
+
+// Allocate Free Products
+//// Threshold Spends - like the Christmas Gift
+//// Newsletter like additions
+//// Product Guide etc additions, additional additions if there is a delivery address etc
+//// Got this product, have this one added
+//// Real time counters
+
+
+
+// Complimentary Gift
+
+let FindReactionsCustomerHasHad = "Customer Reaction list is..."
+let IsComplimentaryGiftActive = "Yes"
+let AllocateComplimentaryGift = "True"
+
+// Increment Total Spend
+
+
+
+// Loyalty
+
 
 
